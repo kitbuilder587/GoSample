@@ -28,7 +28,7 @@ jobs:
           key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
           restore-keys: |
             ${{ runner.os }}-go-
-
+            
       - name: Install dependencies
         run: go mod download
 
@@ -40,4 +40,3 @@ jobs:
 
       - name: Run fmt check
         run: test -z "$(gofmt -l .)"
-
