@@ -1,0 +1,33 @@
+# Ignore Go build artifacts
+/bin/
+/bin
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Ignore Go vendor folder (if you use vendoring)
+/vendor/
+
+# Ignore dependency directories and Go cache
+/pkg/
+/coverage.out
+
+# Ignore editor config folders
+.idea/
+.idea
+*.iml
+*.ipr
+*.iws
+
+# Ignore GoLand IDE config
+/.goland/
+/.goland
+# Older versions (usually .idea covers all JetBrains IDEs)
+
+# System files
+.DS_Store
+Thumbs.db
